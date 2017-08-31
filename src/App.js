@@ -14,7 +14,7 @@ class App extends Component {
     };
 
     localStorage.setItem('state', JSON.stringify(this.state));
-    console.log(this.state);
+    //console.log(this.state);
   }
 
   handleAddTodo(todo){
@@ -38,8 +38,8 @@ class App extends Component {
     let todos = this.state.todos;
     let index = todos.findIndex(x => x.id === id);
     this.setState({edit: true, editID: index}, () => {
-      console.log(this.state);
-      console.log(this.state.todos[this.state.editID]);
+      //console.log(this.state);
+      //console.log(this.state.todos[this.state.editID]);
       localStorage.setItem('state', JSON.stringify(this.state));
     });
   }
@@ -48,7 +48,7 @@ class App extends Component {
     let todos = this.state.todos;
     todos[this.state.editID].detail = data;
     this.setState({todos: todos, edit: false}, () => {
-      console.log(this.state);
+      //console.log(this.state);
       localStorage.setItem('state', JSON.stringify(this.state));
     });
   }
