@@ -1,0 +1,13 @@
+body {
+  background-color: #A9A9A9;
+}
+
+button{
+  margin: auto;
+}
+
+#root {
+  margin: auto;
+  padding: 5%;
+  text-align: center;
+}
